@@ -5,6 +5,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlashFixPro - Services</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light background color */
+        }
+
+        header {
+            background-color: #5d0059; /* Dark purple */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Wrap links on smaller screens */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .service-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 20px; /* Add space between services */
+        }
+
+        .service {
+            background-color: #ffffff; /* White background for services */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 15px;
+            width: 100%; /* Full width on mobile */
+            max-width: 400px; /* Max width for larger screens */
+            text-align: center;
+            transition: transform 0.3s; /* Animation effect */
+        }
+
+        .service:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        h3 {
+            margin: 10px 0;
+            font-size: 1.5rem; /* Adjust heading size */
+            color: #5d0059; /* Purple color */
+        }
+
+        p {
+            font-size: 1rem; /* Adjust paragraph size */
+            color: #333; /* Dark text color */
+        }
+
+        footer {
+            background-color: #333; /* Dark footer */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            h3 {
+                font-size: 1.3rem; /* Adjust heading size for mobile */
+            }
+
+            p {
+                font-size: 0.9rem; /* Adjust paragraph size for mobile */
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -47,4 +134,3 @@
 
 </body>
 </html>
-
