@@ -5,6 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlashFixPro - About Us</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light background color */
+        }
+
+        header {
+            background-color: #5d0059; /* Dark purple */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Wrap links on smaller screens */
+            padding: 10px 0; /* Add padding for nav */
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 15px; /* Add padding for better click area */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover */
+            font-size: 18px;
+        }
+
+        /* Colors for each menu item */
+        nav a:nth-child(1) {
+            background-color: #6a1b9a; /* Home: Deep purple */
+        }
+
+        nav a:nth-child(2) {
+            background-color: #d32f2f; /* Services: Red */
+        }
+
+        nav a:nth-child(3) {
+            background-color: #1976d2; /* About Us: Blue */
+        }
+
+        nav a:nth-child(4) {
+            background-color: #388e3c; /* Contact: Green */
+        }
+
+        nav a:hover {
+            opacity: 0.8; /* Change opacity on hover */
+        }
+
+        .about-section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem; /* Heading size */
+            color: #5d0059; /* Purple color */
+        }
+
+        p {
+            font-size: 1rem; /* Paragraph size */
+            color: #333; /* Dark text color */
+        }
+
+        footer {
+            background-color: #333; /* Dark footer */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.5rem; /* Adjust heading size for mobile */
+            }
+
+            p {
+                font-size: 0.9rem; /* Adjust paragraph size for mobile */
+            }
+
+            nav a {
+                font-size: 16px; /* Adjust font size for mobile */
+                margin: 5px; /* Less margin on mobile */
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -20,9 +114,9 @@
         </nav>
     </header>
 
-    <section style="padding: 40px; text-align: center;">
-        <h2>About Us</h2>
-        <p>FlashFixPro is dedicated to providing top-quality mobile software repair services, ensuring your devices operate smoothly and efficiently.</p>
+    <section class="about-section">
+        <h2>About FlashFixPro</h2>
+        <p>We specialize in providing top-notch mobile repair services, ensuring your devices are back to their optimal performance. Our team of experts is dedicated to delivering quick and reliable repairs at competitive prices.</p>
     </section>
 
     <footer>
@@ -31,4 +125,3 @@
 
 </body>
 </html>
-
