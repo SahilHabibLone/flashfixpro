@@ -25,17 +25,38 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap; /* Wrap links on smaller screens */
+            padding: 10px 0; /* Add padding for nav */
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
+            padding: 10px 15px; /* Add padding for better click area */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s; /* Smooth transition for hover */
             font-size: 18px;
         }
 
+        /* Colors for each menu item */
+        nav a:nth-child(1) {
+            background-color: #6a1b9a; /* Home: Deep purple */
+        }
+
+        nav a:nth-child(2) {
+            background-color: #d32f2f; /* Services: Red */
+        }
+
+        nav a:nth-child(3) {
+            background-color: #1976d2; /* About Us: Blue */
+        }
+
+        nav a:nth-child(4) {
+            background-color: #388e3c; /* Contact: Green */
+        }
+
         nav a:hover {
-            text-decoration: underline;
+            opacity: 0.8; /* Change opacity on hover */
         }
 
         .hero {
@@ -45,7 +66,6 @@
             justify-content: center;
             height: 80vh; /* Set height for hero section */
             text-align: center;
-            padding: 20px; /* Add padding for better spacing */
         }
 
         h1 {
@@ -106,7 +126,7 @@
         /* Media queries for responsiveness */
         @media (max-width: 768px) {
             h1 {
-                font-size: 2.5rem; /* Adjust font size for mobile */
+                font-size: 2.5rem; /* Adjust heading size for mobile */
             }
 
             p {
@@ -114,18 +134,8 @@
             }
 
             nav a {
-                margin: 5px; /* Space out links on mobile */
-                font-size: 16px; /* Adjust font size for links */
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 2rem; /* Further reduce font size for smaller screens */
-            }
-
-            p {
-                font-size: 1.2rem; /* Further adjust paragraph size */
+                font-size: 16px; /* Adjust font size for mobile */
+                margin: 5px; /* Less margin on mobile */
             }
         }
     </style>
