@@ -21,6 +21,12 @@
             text-align: center;
         }
 
+        nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Wrap links on smaller screens */
+        }
+
         nav a {
             color: white;
             text-decoration: none;
@@ -39,6 +45,7 @@
             justify-content: center;
             height: 80vh; /* Set height for hero section */
             text-align: center;
+            padding: 20px; /* Add padding for better spacing */
         }
 
         h1 {
@@ -95,6 +102,32 @@
             bottom: 0;
             width: 100%;
         }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem; /* Adjust font size for mobile */
+            }
+
+            p {
+                font-size: 1.5rem; /* Adjust paragraph size for mobile */
+            }
+
+            nav a {
+                margin: 5px; /* Space out links on mobile */
+                font-size: 16px; /* Adjust font size for links */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem; /* Further reduce font size for smaller screens */
+            }
+
+            p {
+                font-size: 1.2rem; /* Further adjust paragraph size */
+            }
+        }
     </style>
 </head>
 <body>
@@ -128,4 +161,3 @@
 
 </body>
 </html>
-
