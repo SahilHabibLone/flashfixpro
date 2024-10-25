@@ -247,4 +247,49 @@ footer {
     background-color: #5d0059;
     color: white;
 }
+/* General styles for better responsiveness */
+body {
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Responsive Hero Section */
+.hero {
+    background-color: #3e3e3e; /* Adjust background color if needed */
+    height: auto; /* Change to auto */
+    padding: 20px; /* Add padding */
+    text-align: center;
+}
+
+/* Responsive Service Sections */
+.service-section {
+    flex-direction: column; /* Stack services vertically */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding */
+}
+
+.service {
+    width: 90%; /* Use percentage for width */
+    margin-bottom: 20px; /* Add space between items */
+}
+
+/* Footer Responsiveness */
+footer {
+    padding: 10px; /* Adjust padding */
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; /* Stack nav links vertically */
+    }
+
+    nav a {
+        margin: 10px 0; /* Space out links */
+    }
+
+    .cta {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Add other styles as necessary for various screen sizes */
 
