@@ -10,11 +10,11 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa; /* Light background color */
+            background-color: #f8f9fa;
         }
 
         header {
-            background-color: #5d0059; /* Dark purple */
+            background-color: #5d0059;
             color: white;
             padding: 15px 0;
             text-align: center;
@@ -23,58 +23,84 @@
         nav {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Wrap links on smaller screens */
-            padding: 10px 0; /* Add padding for nav */
+            flex-wrap: wrap;
+            padding: 10px 0;
         }
 
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 10px;
-            padding: 10px 15px; /* Add padding for better click area */
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s; /* Smooth transition for hover */
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
             font-size: 18px;
         }
 
-        /* Colors for each menu item */
-        nav a:nth-child(1) {
-            background-color: #6a1b9a; /* Home: Deep purple */
+        nav a:nth-child(1) { background-color: #6a1b9a; }
+        nav a:nth-child(2) { background-color: #d32f2f; }
+        nav a:nth-child(3) { background-color: #1976d2; }
+        nav a:nth-child(4) { background-color: #388e3c; }
+
+        nav a:hover { opacity: 0.8; }
+
+        .about-section { 
+            padding: 40px 20px; 
+            text-align: center; 
+            background: linear-gradient(to right, #e91e63, #ff9800);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
         }
 
-        nav a:nth-child(2) {
-            background-color: #d32f2f; /* Services: Red */
-        }
+        h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        p { font-size: 1.2rem; line-height: 1.5; margin: 0; }
 
-        nav a:nth-child(3) {
-            background-color: #1976d2; /* About Us: Blue */
-        }
-
-        nav a:nth-child(4) {
-            background-color: #388e3c; /* Contact: Green */
-        }
-
-        nav a:hover {
-            opacity: 0.8; /* Change opacity on hover */
-        }
-
-        .about-section {
+        .team-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
             padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 100%;
+        }
+
+        .photo-frame {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: auto;
+            margin-bottom: 10px;
+            border: 6px solid white;
+            display: block;
+        }
+
+        /* Special borders */
+        .founder .photo-frame { border-color: purple; }
+        .ceo .photo-frame { border-color: green; }
+
+        .team-member h3 { font-size: 1.5rem; color: #333; margin: 5px 0; }
+        .team-member p { font-size: 1rem; color: #666; }
+
+        /* Technician names as a simple list */
+        .technician-list {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #333;
             text-align: center;
         }
 
-        h2 {
-            font-size: 2rem; /* Heading size */
-            color: #5d0059; /* Purple color */
-        }
-
-        p {
-            font-size: 1rem; /* Paragraph size */
-            color: #333; /* Dark text color */
-        }
-
         footer {
-            background-color: #333; /* Dark footer */
+            background-color: #333;
             color: white;
             padding: 20px 0;
             text-align: center;
@@ -83,20 +109,15 @@
             width: 100%;
         }
 
-        /* Media queries for responsiveness */
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 1.5rem; /* Adjust heading size for mobile */
+        @media (max-width: 480px) {
+            .photo-frame {
+                width: 100px;
+                height: 100px;
             }
 
-            p {
-                font-size: 0.9rem; /* Adjust paragraph size for mobile */
-            }
-
-            nav a {
-                font-size: 16px; /* Adjust font size for mobile */
-                margin: 5px; /* Less margin on mobile */
-            }
+            h2 { font-size: 2rem; }
+            p { font-size: 1rem; }
+            nav a { font-size: 16px; margin: 5px; }
         }
     </style>
 </head>
@@ -116,7 +137,61 @@
 
     <section class="about-section">
         <h2>About FlashFixPro</h2>
-        <p>We specialize in providing top-notch mobile repair services, ensuring your devices are back to their optimal performance. Our team of experts is dedicated to delivering quick and reliable repairs at competitive prices.</p>
+        <p>At FlashFixPro, we are dedicated to restoring your mobile devices to peak performance. Our expert team specializes in a wide range of mobile repair services, ensuring swift and reliable solutions tailored to your needs.</p>
+        <p>We pride ourselves on delivering exceptional service at competitive prices, always putting our customers first. Whether it’s a cracked screen or software issues, we've got you covered!</p>
+    </section>
+
+    <section class="team-container">
+        <!-- Founder -->
+        <div class="team-member founder">
+            <img src="images/founder.jpg" alt="Founder Photo" class="photo-frame">
+            <h3>Cd</h3>
+            <p>Founder</p>
+        </div>
+
+        <!-- CEO -->
+        <div class="team-member ceo">
+            <img src="images/ceo.jpg" alt="CEO Photo" class="photo-frame">
+            <h3>Irfan Chopan</h3>
+            <p>CEO</p>
+        </div>
+
+        <!-- Operations Manager -->
+        <div class="team-member">
+            <img src="images/operations_manager.jpg" alt="Operations Manager Photo" class="photo-frame">
+            <h3>Aijaz Rehman</h3>
+            <p>Operations Manager</p>
+        </div>
+
+        <!-- Lead Technician -->
+        <div class="team-member">
+            <img src="images/lead_technician.jpg" alt="Lead Technician Photo" class="photo-frame">
+            <h3>Mohd Danish</h3>
+            <p>Lead Technician</p>
+        </div>
+
+        <!-- Customer Support Specialist -->
+        <div class="team-member">
+            <img src="images/customer_support.jpg" alt="Customer Support Specialist Photo" class="photo-frame">
+            <h3>Mohd Abbas</h3>
+            <p>Customer Support Specialist</p>
+        </div>
+
+        <!-- Administrative Assistant -->
+        <div class="team-member">
+            <img src="images/administrative_assistant.jpg" alt="Administrative Assistant Photo" class="photo-frame">
+            <h3>Farooq Chopan</h3>
+            <p>Administrative Assistant</p>
+        </div>
+
+        <!-- Technicians -->
+        <ul class="technician-list">
+            <li>Mohd Owais</li>
+            <li>Zain Malik</li>
+            <li>Arif Khan</li>
+            <li>Salman Mirza</li>
+            <li>Bilal Sheikh</li>
+        </ul>
     </section>
 
     <footer>
