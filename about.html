@@ -44,10 +44,22 @@
 
         nav a:hover { opacity: 0.8; }
 
-        .about-section { padding: 20px; text-align: center; }
+        .about-section {
+            padding: 20px;
+            text-align: center;
+        }
 
-        h2 { font-size: 2rem; color: #5d0059; }
-        p { font-size: 1rem; color: #333; }
+        h2 {
+            font-size: 2rem;
+            color: #5d0059;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+        }
 
         .team-container {
             display: flex;
@@ -55,7 +67,7 @@
             align-items: center;
             gap: 20px;
             padding: 20px;
-            max-width: 400px;
+            max-width: 500px;
             margin: auto;
         }
 
@@ -72,14 +84,34 @@
             margin-bottom: 10px;
             border: 6px solid white;
             display: block;
+            transition: transform 0.3s;
         }
 
         /* Special borders */
         .founder .photo-frame { border-color: purple; }
         .ceo .photo-frame { border-color: green; }
 
-        .team-member h3 { font-size: 1.2rem; color: #333; margin: 5px 0; }
-        .team-member p { font-size: 0.9rem; color: #666; }
+        /* Founder and CEO styles */
+        .founder h3 {
+            font-size: 1.8rem; /* Founder name bigger */
+            color: #5d0059;
+        }
+
+        .ceo h3 {
+            font-size: 1.5rem; /* CEO name slightly smaller */
+            color: #1976d2;
+        }
+
+        .team-member h3 {
+            font-size: 1.2rem; /* Regular team member name */
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .team-member p {
+            font-size: 0.9rem;
+            color: #666;
+        }
 
         /* Technician names as a simple list */
         .technician-list {
@@ -145,6 +177,13 @@
             <img src="images/ceo.jpeg" alt="CEO Photo" class="photo-frame">
             <h3>Irfan Chopan</h3>
             <p>CEO</p>
+        </div>
+
+        <!-- Operations Manager -->
+        <div class="team-member">
+            <img src="images/ajaz.jpeg" alt="Operations Manager Photo" class="photo-frame">
+            <h3>Aijaz Rehman</h3>
+            <p>Operations Manager</p>
         </div>
 
         <!-- Lead Technician -->
