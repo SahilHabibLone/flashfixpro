@@ -44,26 +44,18 @@
 
         nav a:hover { opacity: 0.8; }
 
-        .about-section { 
-            padding: 40px 20px; 
-            text-align: center; 
-            background: linear-gradient(to right, #e91e63, #ff9800);
-            color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-        }
+        .about-section { padding: 20px; text-align: center; }
 
-        h2 { font-size: 2.5rem; margin-bottom: 20px; }
-        p { font-size: 1.2rem; line-height: 1.5; margin: 0; }
+        h2 { font-size: 2rem; color: #5d0059; }
+        p { font-size: 1rem; color: #333; }
 
         .team-container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 30px;
+            gap: 20px;
             padding: 20px;
-            max-width: 600px;
+            max-width: 400px;
             margin: auto;
         }
 
@@ -73,8 +65,8 @@
         }
 
         .photo-frame {
-            width: 150px;
-            height: 150px;
+            width: 200px; /* Increased size */
+            height: 200px; /* Increased size */
             border-radius: 50%;
             margin: auto;
             margin-bottom: 10px;
@@ -86,8 +78,8 @@
         .founder .photo-frame { border-color: purple; }
         .ceo .photo-frame { border-color: green; }
 
-        .team-member h3 { font-size: 1.5rem; color: #333; margin: 5px 0; }
-        .team-member p { font-size: 1rem; color: #666; }
+        .team-member h3 { font-size: 1.2rem; color: #333; margin: 5px 0; }
+        .team-member p { font-size: 0.9rem; color: #666; }
 
         /* Technician names as a simple list */
         .technician-list {
@@ -111,12 +103,12 @@
 
         @media (max-width: 480px) {
             .photo-frame {
-                width: 100px;
-                height: 100px;
+                width: 120px; /* Adjusted size for smaller screens */
+                height: 120px; /* Adjusted size for smaller screens */
             }
 
-            h2 { font-size: 2rem; }
-            p { font-size: 1rem; }
+            h2 { font-size: 1.5rem; }
+            p { font-size: 0.9rem; }
             nav a { font-size: 16px; margin: 5px; }
         }
     </style>
@@ -137,8 +129,7 @@
 
     <section class="about-section">
         <h2>About FlashFixPro</h2>
-        <p>At FlashFixPro, we are dedicated to restoring your mobile devices to peak performance. Our expert team specializes in a wide range of mobile repair services, ensuring swift and reliable solutions tailored to your needs.</p>
-        <p>We pride ourselves on delivering exceptional service at competitive prices, always putting our customers first. Whether it’s a cracked screen or software issues, we've got you covered!</p>
+        <p>We specialize in providing top-notch mobile repair services, ensuring your devices are back to their optimal performance. Our team of experts is dedicated to delivering quick and reliable repairs at competitive prices.</p>
     </section>
 
     <section class="team-container">
